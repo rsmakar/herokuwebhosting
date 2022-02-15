@@ -1,0 +1,41 @@
+extends base.pug
+block style 
+    style  
+     include ../static/style.css
+block content 
+        section#introsection 
+            div 
+                h1  Welcome to Rahul's Dance Academy
+            div 
+                h3 There are shortcuts to happiness and dancing is one of them 
+        section#cardsection 
+            h2  Our Mission
+            div#card-container
+                div.card   
+                    h3 Dance Perfection
+                    div.card-box
+                        div.card-img
+                            img(src="../static/2.jpg", alt="card2")
+                        div.cardcontent 
+                            p this is the best dance academy of the universe                          
+                div.card   
+                    h3 Dance The Way You Like
+                    div.card-box
+                        div.card-img
+                            img(src="../static/1.jpg", alt="card1")
+                        div.cardcontent 
+                            p this is the best dance academy of the universe                          
+                div.card   
+                    h3 Expert Teaching
+                    div.card-box
+                        div.card-img
+                            img(src="../static/3.jpg", alt="card3")
+                        div.cardcontent 
+                            p this is the best dance academy of the universe                          
+        section#sponser 
+            h2 Our Sponsers
+            div#sponser-logo
+                img(src="../static/logo1.png", alt="")
+                img(src="../static/logo2.png", alt="")
+                img(src="../static/logo3.png", alt="")
+                img(src="../static/logo4.png", alt="logo4")
