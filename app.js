@@ -4,7 +4,7 @@ const pug = require('pug');
 const app=express();
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
-const port=8000;
+const port=process.env.PORT || 8000;
 app.use("/static", express.static('static'));
 app.use(express.urlencoded());
 app.set('view engine','pug');
